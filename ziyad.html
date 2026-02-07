@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="theme-color" content="#667eea">
+    <title>Happy Birthday Alex! 🎉</title>
+    <link rel="stylesheet" href="ziyad.css">
+</head>
+<body>
+    <!-- Floating Birthday Balloons -->
+    <div class="balloons-container">
+        <div class="balloon balloon-1"></div>
+        <div class="balloon balloon-2"></div>
+        <div class="balloon balloon-3"></div>
+        <div class="balloon balloon-4"></div>
+        <div class="balloon balloon-5"></div>
+    </div>
+
+    <!-- Confetti Canvas -->
+    <canvas id="confetti-canvas"></canvas>
+
+    <!-- Header Section -->
+    <header class="hero-section">
+        <div class="hero-content">
+            <h1 class="glitch" data-text="Happy Birthday Alex!">Happy Birthday Alex!</h1>
+            <p class="subtitle">Celebrating Another Amazing Year of Friendship!</p>
+            <div class="age-counter">
+                <span id="age-display">25</span>
+                <p>Years of Awesomeness!</p>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>↓</span>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="#timeline">Memory Lane</a></li>
+            <li><a href="#capsule">Time Capsule</a></li>
+            <li><a href="#guestbook">Guest Book</a></li>
+        </ul>
+    </nav>
+
+    <!-- Timeline Section -->
+    <section id="timeline" class="section timeline-section">
+        <div class="container">
+            <h2 class="section-title">Our Friendship Timeline 🌟</h2>
+            <p class="section-subtitle">The best memories we've shared together</p>
+            
+            <div class="timeline">
+                <!-- Memory 1 -->
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-date">2018</div>
+                    <div class="timeline-content">
+                        <div class="memory-card">
+                            <div class="memory-icon">🎓</div>
+                            <h3>The Day We Met</h3>
+                            <p>First day of college orientation - who knew that awkward introduction would turn into the best friendship ever! Remember when we both reached for the last donut? 😂</p>
+                            <div class="memory-tags">
+                                <span class="tag">college</span>
+                                <span class="tag">first meeting</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Memory 2 -->
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-date">2019</div>
+                    <div class="timeline-content">
+                        <div class="memory-card">
+                            <div class="memory-icon">🏖️</div>
+                            <h3>Epic Road Trip</h3>
+                            <p>Our spontaneous beach trip where we got lost for 3 hours but found the most amazing sunset spot. Still can't believe we survived on gas station snacks!</p>
+                            <div class="memory-tags">
+                                <span class="tag">adventure</span>
+                                <span class="tag">beach</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Memory 3 -->
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-date">2020</div>
+                    <div class="timeline-content">
+                        <div class="memory-card">
+                            <div class="memory-icon">🎮</div>
+                            <h3>Lockdown Gaming Marathon</h3>
+                            <p>48-hour gaming session during quarantine. We beat every co-op game and discovered our true competitive nature. Pizza boxes everywhere! 🍕</p>
+                            <div class="memory-tags">
+                                <span class="tag">gaming</span>
+                                <span class="tag">quarantine</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Memory 4 -->
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-date">2021</div>
+                    <div class="timeline-content">
+                        <div class="memory-card">
+                            <div class="memory-icon">🎤</div>
+                            <h3>Karaoke Disaster</h3>
+                            <p>The night we thought we could sing like Beyoncé. Spoiler: We couldn't. But we had the time of our lives and got kicked out at closing time! 😄</p>
+                            <div class="memory-tags">
+                                <span class="tag">karaoke</span>
+                                <span class="tag">legendary</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Memory 5 -->
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-date">2023</div>
+                    <div class="timeline-content">
+                        <div class="memory-card">
+                            <div class="memory-icon">🎨</div>
+                            <h3>Art Class Chaos</h3>
+                            <p>We signed up for pottery class and made the ugliest vases known to mankind. But hey, they're OUR ugly vases and I treasure mine! 💕</p>
+                            <div class="memory-tags">
+                                <span class="tag">creative</span>
+                                <span class="tag">hilarious</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Memory 6 -->
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-date">2024</div>
+                    <div class="timeline-content">
+                        <div class="memory-card">
+                            <div class="memory-icon">🌮</div>
+                            <h3>Taco Tuesday Tradition</h3>
+                            <p>Started our weekly taco tradition. We've tried 47 different taco places and counting! Our quest for the perfect taco continues...</p>
+                            <div class="memory-tags">
+                                <span class="tag">food</span>
+                                <span class="tag">tradition</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Time Capsule Section -->
+    <section id="capsule" class="section capsule-section">
+        <div class="container">
+            <h2 class="section-title">Digital Time Capsule 🎁</h2>
+            <p class="section-subtitle">Inside jokes, funny moments, and our secret language</p>
+            
+            <div class="capsule-grid">
+                <!-- Inside Joke 1 -->
+                <div class="capsule-card" data-aos="zoom-in">
+                    <div class="capsule-icon">🦙</div>
+                    <h3>"But is it a llama?"</h3>
+                    <p>That time we had a 2-hour debate about whether we saw a llama or an alpaca at the zoo. We still don't know, but we'll never let it go! 😂</p>
+                    <button class="reveal-btn" onclick="revealSecret(1)">Reveal Memory</button>
+                    <div class="secret-content" id="secret-1">
+                        <p class="secret-text">It was definitely a llama. Don't @ me. 🦙</p>
+                    </div>
+                </div>
+
+                <!-- Inside Joke 2 -->
+                <div class="capsule-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="capsule-icon">☕</div>
+                    <h3>The Coffee Incident</h3>
+                    <p>Remember when you ordered a "small coffee" and got a bucket-sized monstrosity? You drank it all and couldn't sleep for 30 hours!</p>
+                    <button class="reveal-btn" onclick="revealSecret(2)">Reveal Memory</button>
+                    <div class="secret-content" id="secret-2">
+                        <p class="secret-text">"I can handle caffeine!" - Famous last words 😅</p>
+                    </div>
+                </div>
+
+                <!-- Inside Joke 3 -->
+                <div class="capsule-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="capsule-icon">🎭</div>
+                    <h3>Secret Handshake Champions</h3>
+                    <p>Our overly complicated 15-step handshake that takes 2 minutes to complete. We're the only ones who remember all the moves!</p>
+                    <button class="reveal-btn" onclick="revealSecret(3)">Reveal Memory</button>
+                    <div class="secret-content" id="secret-3">
+                        <p class="secret-text">Step 1: Fist bump. Step 2-15: Pure chaos and improvisation 🤝</p>
+                    </div>
+                </div>
+
+                <!-- Video Memory -->
+                <div class="capsule-card video-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="capsule-icon">🎬</div>
+                    <h3>Epic Fail Compilation</h3>
+                    <p>Click below to relive our most hilarious moments!</p>
+                    <div class="video-placeholder">
+                        <div class="play-button" onclick="playVideo()">▶</div>
+                        <p class="video-label">Friendship Highlights Reel</p>
+                    </div>
+                </div>
+
+                <!-- Photo Memory -->
+                <div class="capsule-card" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="capsule-icon">📸</div>
+                    <h3>"Photogenic" Moments</h3>
+                    <p>A collection of our worst photos that somehow became our favorites. Peak comedy achieved!</p>
+                    <button class="reveal-btn" onclick="revealSecret(4)">Reveal Memory</button>
+                    <div class="secret-content" id="secret-4">
+                        <div class="photo-grid">
+                            <div class="photo-placeholder">📷 Derp Face #1</div>
+                            <div class="photo-placeholder">📷 Mid-Sneeze Shot</div>
+                            <div class="photo-placeholder">📷 Food Beard</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quote Card -->
+                <div class="capsule-card" data-aos="zoom-in" data-aos-delay="500">
+                    <div class="capsule-icon">💬</div>
+                    <h3>Your Famous Quotes</h3>
+                    <p>A collection of the most ridiculous things you've said</p>
+                    <button class="reveal-btn" onclick="revealSecret(5)">Reveal Memory</button>
+                    <div class="secret-content" id="secret-5">
+                        <ul class="quote-list">
+                            <li>"Is cereal a soup?"</li>
+                            <li>"I'm not lost, I'm exploring!"</li>
+                            <li>"Sleep is just time travel to breakfast"</li>
+                            <li>"I'll start my diet on Monday... next Monday"</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Guest Book Section -->
+    <section id="guestbook" class="section guestbook-section">
+        <div class="container">
+            <h2 class="section-title">Birthday Guest Book 💌</h2>
+            <p class="section-subtitle">Leave your birthday wishes and favorite memories!</p>
+            
+            <div class="guestbook-container">
+                <!-- Message Form -->
+                <div class="message-form-container" data-aos="fade-up">
+                    <h3>Share Your Message</h3>
+                    <form id="message-form">
+                        <div class="form-group">
+                            <input type="text" id="guest-name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="guest-message" placeholder="Your birthday message or favorite memory with Alex..." rows="4" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <select id="message-color">
+                                <option value="pink">💗 Pink</option>
+                                <option value="blue">💙 Blue</option>
+                                <option value="purple">💜 Purple</option>
+                                <option value="green">💚 Green</option>
+                                <option value="yellow">💛 Yellow</option>
+                                <option value="orange">🧡 Orange</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Birthday Wishes 🎉</button>
+                    </form>
+                </div>
+
+                <!-- Messages Display -->
+                <div class="messages-display">
+                    <h3>Birthday Messages <span id="message-count">(3)</span></h3>
+                    <div id="messages-container">
+                        <!-- Sample Messages -->
+                        <div class="message-card pink-card" data-aos="fade-up">
+                            <div class="message-header">
+                                <strong>Sarah Johnson</strong>
+                                <span class="message-time">2 hours ago</span>
+                            </div>
+                            <p class="message-text">Happy Birthday Alex! 🎊 Remember that time we got stuck in the elevator for an hour? Best random bonding experience ever! Hope your day is as amazing as you are! 💕</p>
+                            <div class="message-footer">
+                                <button class="like-btn" onclick="likeMessage(this)">❤️ <span>5</span></button>
+                            </div>
+                        </div>
+
+                        <div class="message-card blue-card" data-aos="fade-up" data-aos-delay="100">
+                            <div class="message-header">
+                                <strong>Mike Rodriguez</strong>
+                                <span class="message-time">5 hours ago</span>
+                            </div>
+                            <p class="message-text">HAPPY BIRTHDAY BUDDY! 🎂 Still laughing about our camping trip disaster last year. Who knew bears liked granola that much? 😂 Here's to another year of adventures!</p>
+                            <div class="message-footer">
+                                <button class="like-btn" onclick="likeMessage(this)">❤️ <span>8</span></button>
+                            </div>
+                        </div>
+
+                        <div class="message-card purple-card" data-aos="fade-up" data-aos-delay="200">
+                            <div class="message-header">
+                                <strong>Emma Chen</strong>
+                                <span class="message-time">8 hours ago</span>
+                            </div>
+                            <p class="message-text">Happy Birthday to my favorite human! 🌟 Thanks for always being there with terrible puns and great advice. You're one of a kind! Love you! 🎈</p>
+                            <div class="message-footer">
+                                <button class="like-btn" onclick="likeMessage(this)">❤️ <span>12</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>Made with 💖 for an incredible friend</p>
+            <p class="footer-quote">"Here's to another year of laughter, adventures, and unforgettable memories!"</p>
+            <div class="social-links">
+                <a href="#" class="social-btn">📸 Instagram</a>
+                <a href="#" class="social-btn">🐦 Twitter</a>
+                <a href="#" class="social-btn">📘 Facebook</a>
+            </div>
+            <p class="copyright">© 2024 Birthday Celebration | Created with Love</p>
+        </div>
+    </footer>
+
+    <!-- Modal for Video -->
+    <div id="video-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeVideo()">&times;</span>
+            <h3>Friendship Highlights! 🎬</h3>
+            <div class="video-container">
+                <p style="text-align: center; padding: 40px; color: #666;">
+                    📹 Add your favorite video here!<br>
+                    Replace this placeholder with embedded video or video player
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="ziyad.js"></script>
+</body>
+</html>
